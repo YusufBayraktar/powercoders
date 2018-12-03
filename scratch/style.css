@@ -4,7 +4,7 @@ p.warning {
   font-style: bold;
   padding: .5em 1em;
   border-radius: 10px;
-  text-shadow: 3px 10px 5px black
+  text-shadow: 3px -10px 5px black
 }
 
 p.warning::before {
