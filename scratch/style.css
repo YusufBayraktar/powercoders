@@ -1,3 +1,8 @@
+
+li.important {
+  color: purple;
+}
+
 p.warning {
   background-color: purple;
   color: lightgreen;
