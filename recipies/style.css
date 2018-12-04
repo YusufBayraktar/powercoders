@@ -1,0 +1,11 @@
+h1 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+p {
+  font-family: 'Avro', serif;
+}
+
+p.quantity {
+  font-family: 'Space Mono' monospace;
+}
