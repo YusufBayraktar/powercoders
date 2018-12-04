@@ -2,10 +2,15 @@ h1 {
   font-family: 'Quicksand', sans-serif;
 }
 
-p {
-  font-family: 'Avro', serif;
+body {
+  font-family: 'Arvo', serif;
 }
 
-p.quantity {
+span.quantity {
   font-family: 'Space Mono' monospace;
+  color: red;
+}
+
+#ingredients {
+  color: green;
 }
