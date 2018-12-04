@@ -1,0 +1,19 @@
+h1,h2 {
+  font-family: 'Quicksand', sans-serif;
+  background-color: lightgrey;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+body {
+  font-family: 'Arvo', serif;
+}
+
+span.quantity {
+  font-family: 'Space Mono' monospace;
+  color: red;
+}
+
+#ingredients {
+  color: green;
+}
