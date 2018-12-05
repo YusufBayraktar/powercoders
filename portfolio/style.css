@@ -9,11 +9,10 @@ body {
   font-family: 'Arvo', serif;
 }
 
-span.quantity {
+span.date {
   font-family: 'Space Mono' monospace;
-  color: red;
 }
 
-#ingredients {
-  color: green;
+p {
+  margin-left: 2em;
 }
