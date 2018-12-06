@@ -1,4 +1,8 @@
+p, li {
+  padding-top: .5em;
+  padding-bottom: 1.5em;
+}
+
 * {
-  margin: 0px;
   border: 1px solid black;
 }
