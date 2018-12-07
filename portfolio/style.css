@@ -1,16 +1,44 @@
-h1,h2 {
-  font-family: 'Quicksand', sans-serif;
-  background-color: lightgrey;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
 body {
-  font-family: 'Arvo', serif;
+  position: relative;
+  font-family: Arial, sans-serif;
 }
 
-span.date {
-  font-family: 'Space Mono' monospace;
+#header {
+  background-color: lightgrey;
+  border-radius: 7px;
+  text-align: right;
+  margin: 1em;
+  padding: .5em 1em .5em;
+}
+
+#info {
+  position: absolute;
+  left: 1em;
+  width: 15em;
+  min-height: 21vh;
+}
+
+#pic {
+  position: absolute;
+  right: 3em;
+  text-align: right;
+  width: 106px;
+  height: 178px;
+  border-radius: 10px;
+  z-index: 1;
+  background-image: url("yusuf-photo.png");
+}
+
+.content {
+  position: relative;
+  top: 10em;
+}
+
+h2 {
+  background-color: lightgrey;
+  border-radius: 7px;
+  margin: 1em;
+  padding: .5em 1em .5em;
 }
 
 p {
