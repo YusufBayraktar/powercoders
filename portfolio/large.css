@@ -1,0 +1,14 @@
+h2 {
+  position: relative;
+  margin-left: 1em;
+  width: 7em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+h2 + ul {
+  padding-top: .75em;
+  margin-top: 1.5em;
+  width: calc(100% - 22em);
+  display: inline-block;
+}
