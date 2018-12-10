@@ -3,14 +3,16 @@ ul.breadcrumb {
   background-color:lightgrey;
 }
 
-ul.breadcrumb li {
-  display: inline;
-}
+@media screen and (min-width:600px) {
+  ul.breadcrumb li {
+    display: inline;
+  }
 
-ul.breadcrumb li::before {
-  content: " > "
-}
+  ul.breadcrumb li::before {
+    content: " > "
+  }
 
-ul.breadcrumb li:first-child::before {
-  content: ""
+  ul.breadcrumb li:first-child::before {
+    content: ""
+  }
 }
