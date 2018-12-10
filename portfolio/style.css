@@ -1,6 +1,7 @@
 body {
   position: relative;
   font-family: Arial, sans-serif;
+  margin: 1em;
 }
 
 #header {
@@ -43,4 +44,12 @@ h2 {
 
 p {
   margin-left: 2em;
+}
+
+ul.list li {
+  display: inline;
+  }
+
+ul.list li::before{
+  content: " * "
 }
