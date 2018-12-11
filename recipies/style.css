@@ -1,9 +1,10 @@
 body {
   position: relative;
   font-family: 'Arvo', serif;
-  width: 80%;
-  padding-left: 8em;
-  padding-right: 8em;
+  margin: 0 auto;
+
+  padding-left: 3em;
+  padding-right: 3em;
   /* ask this if how is it to have both padding and width */
 }
 

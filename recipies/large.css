@@ -1,13 +1,12 @@
 #entrance-story {
-  margin: 1em;
-  left: 5em;
+    right: 26px;
   text-align: right;
 }
 
 #instructions {
   position: absolute;
   left: 17em;
-  min-height: 50vh;
+  min-height: 40vh;
   width: calc(100% - 48em);
 }
 
