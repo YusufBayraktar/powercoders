@@ -1,14 +1,29 @@
-h1 {
+body {
+  background-color: lightgrey;
   font-family: Verdana;
+  color: purple;
+  font-size: 24px;
+}
+
+h1 {
+  text-transform: capitalize;
+  margin-left: 2em;
 }
 
 div#commandlist {
   font-family: Arial, sans-serif;
 }
 
-body {
+#main ul li {
+  display: inline;
+  border: 1px solid grey;
+  background-color: grey;
+  border-radius: 7px;
+  box-shadow: 2px 2px;
+}
 
-  background-color: lightgrey;
-  color: purple;
-  font-size: large;
+ul li {
+  margin: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
