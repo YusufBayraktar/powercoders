@@ -1,0 +1,25 @@
+#entrance-story {
+  margin: 1em;
+  left: 5em;
+  text-align: right;
+}
+
+#instructions {
+  position: absolute;
+  left: 17em;
+  min-height: 50vh;
+  width: calc(100% - 48em);
+}
+
+#ingredients {
+  position: absolute;
+  left: 1em;
+  width: 14em;
+  min-height: 50vh;
+}
+
+#pic {
+  position:absolute;
+  right: 1em;
+  min-height: 50vh;
+}

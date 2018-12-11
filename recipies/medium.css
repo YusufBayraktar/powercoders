@@ -1,0 +1,18 @@
+#entrance-story, #instructions {
+  position: relative;
+  left: 1em;
+  min-height: 50vh;
+  width: calc(100% - 473px);
+}
+
+  #pic, #ingredients {
+  position: absolute;
+  text-align: right;
+  right: 1em;
+  min-height: 50vh;
+  display: inline-block;
+  }
+
+#ingredients {
+  background-color: rgba(255, 255, 255, .15)
+}
