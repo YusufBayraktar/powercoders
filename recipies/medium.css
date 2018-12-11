@@ -1,7 +1,6 @@
 #entrance-story, #instructions {
   position: relative;
   left: 1em;
-  min-height: 45vh;
   width: calc(100% - 473px);
 }
 
