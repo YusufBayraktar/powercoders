@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin-top: 3em;
+}
+
+ul li {
+  list-style: none;
+  display: block;
+  text-align: right;
+  margin: 1em;
+  padding: .7em 1em;
+  width: 11em;
+  border-radius: 19px;
+  box-shadow: 2px 2px 4px black;
+}
+
+ul li a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+ul li:hover {
+  width: 17.5em;
+  transition: .7s;
+}
+
+#m-xxx {
+  display: block;
+}
+
+#xxx:hover + #m-xxx {
+  opacity: 1;
+  transition: 2.3s;
+}
+
+#m-xxx {
+  opacity: 0;
+  position: absolute;
+  box-shadow: 1px 1px 3px black;
+  border-radius: 19px;
+  padding: 0 1em;
+  left: 17em;
+  top: 5.6em;
+}
+
+#m-yyy {
+  display: block;
+}
+
+#yyy:hover + #m-yyy {
+  opacity: 1;
+  transition: 2.3s;
+}
+
+#m-yyy {
+  opacity: 0;
+  position: absolute;
+  box-shadow: 1px 1px 3px black;
+  border-radius: 19px;
+  padding: 0 1em;
+  left: 17em;
+  top: 9.2em;
+}
+
+#m-zzz {
+  display: block;
+}
+
+#zzz:hover + #m-zzz {
+  opacity: 1;
+  transition: 2.3s;
+}
+
+#m-zzz {
+  opacity: 0;
+  position: absolute;
+  box-shadow: 1px 1px 3px black;
+  border-radius: 19px;
+  padding: 0 1em;
+  left: 17em;
+  top: 12.8em;
+}
+
+#img {
+  background-image: url("butterfly.png");
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 3em;
+  right: 5em;
+}
