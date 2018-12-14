@@ -1,0 +1,9 @@
+div.content {
+  position: relative;
+}
+
+#entrace-story {
+  position:absolute;
+  top: 0px;
+  left: 50%;
+}

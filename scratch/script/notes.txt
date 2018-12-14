@@ -1,0 +1,41 @@
+document.getElementId('mayheading');    ---> this is a function / method, indicates to find a value
+null 					---> is a special value/type, defines some kind of 'nothingness'
+use google JScript style guide
+statments
+parameters
+able to call a function
+
+mdn events:
+----
+click
+mouseover: mause over an element
+load: when the page is loaded
+online: be online or offline
+keyup: a key is used
+drop: drag and drop
+scroll: scroll the page
+resize: resize the page
+
+
+
+afternoon 14.00----
+
+---Refactoring
+-requirements can change
+-knowladge can change
+-rewriting can improve
+*get reviewed and change feedbacks
+
+---what can wrong go
+-inline Jscript
+-repeated code
+-event biding=is more complicated than= with onclick 
+-code smells, with experience taste gets better
+-finding the more beautiful way
+
+refactoring: inline <<<<<javascript
+place js in a separate file is similiar to css
+.js is the ext.c for JS
+
+<script src="xY.js"></script> is the link for JavaScript file
+

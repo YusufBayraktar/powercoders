@@ -1,0 +1,7 @@
+	windows			OSX			what does - output
+	cd			pwd			shows the directory in which we are now
+	dir			ls			shows all the files in directories
+	cd dir-name		cd dir-name		go into a directory
+	cd..			cd..			go up one directory 
+	mkdir dir-name		mkdir dir-name		creates a directory
+	rmdir dir-name		rmdir dir-name		deletes the directory
