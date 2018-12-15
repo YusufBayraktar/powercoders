@@ -2,10 +2,8 @@ body {
   position: relative;
   font-family: 'Arvo', serif;
   margin: 0 auto;
-
   padding-left: 3em;
   padding-right: 3em;
-  /* ask this if how is it to have both padding and width */
 }
 
   h1 {
@@ -14,14 +12,10 @@ body {
   padding-left: 1em;
   border-radius: 7px;
 }
-
-
-
 #pic {
   position: relative;
   text-align: center;
  }
-
 
 span.quantity {
   font-family: 'Space Mono', monospace;
