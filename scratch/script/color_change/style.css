@@ -1,0 +1,74 @@
+#main {
+  width: 1024px;
+  height: 768px;
+  border: 3px solid grey;
+  box-shadow: 3px 3px 7px black;
+}
+
+#sq1, #sq2, #sq3, #sq4, #sq5, #sq6, #sq7, #sq8, #sq9, #sq10, #sq11, #sq12 {
+  height: 256px;
+  width: 256px;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#sq1 {
+  bottom: 0px;
+  left: 0px;
+}
+
+#sq2 {
+  bottom: 256px;
+  left: 256px;
+}
+
+#sq3 {
+  bottom: 512px;
+  left: 512px;
+}
+
+#sq4 {
+  bottom: 768px;
+  left: 768px;
+}
+
+#sq5 {
+  bottom: 768px;
+  left:0px
+}
+
+#sq6 {
+  bottom: 1024px;
+  left: 256px;
+}
+
+#sq7 {
+  bottom: 1280px;
+  left: 512px;
+}
+
+#sq8 {
+  bottom: 1536px;
+  left: 768px;
+}
+
+#sq9 {
+  bottom: 1536px;
+  left: 0px;
+}
+
+#sq10 {
+  bottom: 1792px;
+  left: 256px;
+}
+
+#sq11 {
+  bottom: 2048px;
+  left: 512px;
+}
+
+#sq12 {
+  bottom: 2304px;
+  left: 768px;
+}

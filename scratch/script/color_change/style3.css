@@ -1,0 +1,74 @@
+#main {
+  width: 1030px;
+  height: 792px;
+  border: 3px solid grey;
+  box-sizing: border-box;
+  box-shadow: 3px 3px 7px black;
+}
+
+#theColor {
+  width: 1030px;
+  height: 24px;
+  border: 1px solid rgb(112, 41, 99);
+  background-color: rgb(112, 41,99);
+  box-sizing: border-box;
+  position: absolute;
+  top: 779px;
+  left: 8px;
+}
+
+.sq {
+  height: 256px;
+  width: 256px;
+  border: 1px solid grey;
+  box-sizing: border-box;
+  float: left;
+}
+
+#sq1 {
+  background-color: white;
+}
+
+#sq2 {
+  background-color: yellow;
+}
+
+#sq3 {
+  background-color: orange;
+}
+
+#sq4 {
+    background-color: green;
+}
+
+#sq5 {
+  background-color: turquoise;
+}
+
+#sq6 {
+  background-color: violet;
+}
+
+#sq7 {
+  background-color: pink;
+}
+
+#sq8 {
+  background-color: blue;
+}
+
+#sq9 {
+  background-color: salmon;
+}
+
+#sq10 {
+  background-color: olive;
+}
+
+#sq11 {
+  background-color: grey;
+}
+
+#sq12 {
+  background-color: black;
+}
