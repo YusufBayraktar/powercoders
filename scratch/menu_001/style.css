@@ -55,7 +55,7 @@ ul li:hover {
   display: block;
 }
 
-#yyy:hover + #m-yyy {
+#yyy:hover #m-yyy {
   opacity: 1;
   transition: 2.3s;
 }

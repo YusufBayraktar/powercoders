@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="medium.css" media="screen and (min-width: 840px)">
     <link rel="stylesheet" href="large.css" media="screen and (min-width: 1200px)">
     <link href="https://fonts.googleapis.com/css?family=Arvo|Quicksand|Space+Mono" rel="stylesheet">
+    <script src="script.js"></script>
     <title>puding</title>
   </head>
 
@@ -24,8 +25,10 @@
     </div>
 
     <div id="ingredients">
-      <h1>malzemeler</h1>
-      <ul>
+      <h1><span id="hide-list" class="show" onclick="hide(event);">v</span>
+          <span id="show-list" class="hide" onclick="show(event);">&gt;</span>
+        malzemeler</h1>
+      <ul id="ingredient-list">
         <li><span class="quantity">4</span> su bardağı süt</li>
         <li><span class="quantity">8</span> yemek kaşığı toz şeker</li>
         <li><span class="quantity">4</span> yemek kaşığı kakao</li>

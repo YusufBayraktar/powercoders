@@ -1,0 +1,6 @@
+function setBackgroundColor(sq) {
+  let el = document.getElementById('theColor');
+  let backgroundColor = window.getComputedStyle(el)['backgroundColor'];
+  sq.style['backgroundColor'] = backgroundColor;
+  console.log(el.style);
+}
