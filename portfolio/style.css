@@ -17,17 +17,18 @@ body {
   left: 1em;
   width: 23em;
   min-height: 21vh;
+  z-index: 2;
 }
 
 #pic {
   position: absolute;
   right: 3em;
   text-align: right;
-  width: 106px;
-  height: 178px;
+  width: 153px;
+  height: 135px;
   border-radius: 10px;
   z-index: 1;
-  background-image: url("yusuf-photo.png");
+  background-image: url("photo_c.png");
 }
 
 .content {
