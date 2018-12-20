@@ -55,3 +55,36 @@ ul.list li {
 ul.list li::before{
   content: " * "
 }
+
+ul.list li:nth-child(4)::before {
+  content: " // * "
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.date {
+  font-family: monospace;
+  color: white;
+  background-color: lightgrey;
+  padding: 0px 4px;
+  border-radius: 2.7px;
+}
+
+span.show {
+    display: inline-block;
+
+}
+span.hide {
+    display: none;
+}
+
+ul.show {
+    display: block;
+}
+
+ul.hide {
+    display: none;
+}
