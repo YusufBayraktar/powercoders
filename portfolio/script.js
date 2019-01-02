@@ -1,13 +1,13 @@
 function hide(event) {
-    setClass('V_we', 'hide');
-    setClass('info_list_we_l', 'hide');
-    setCLass('gt_we', 'show');
+    setClass('hide_list', 'hide');
+    setClass('info_list', 'hide');
+    setClass('show_list', 'show');
 }
 
 function show(event) {
-    setClass('V_we', 'show');
-    setClass('info_list_we', 'show');
-    setClass('gt_we', 'hide');
+    setClass('hide_list', 'show');
+    setClass('info_list', 'show');
+    setClass('show_list', 'hide');
 }
 
 function setClass(id, className) {

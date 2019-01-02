@@ -29,11 +29,12 @@ body {
   border-radius: 10px;
   z-index: 1;
   background-image: url("photo_c.png");
+  top: 9.8em;
 }
 
 .content {
   position: relative;
-  top: 10em;
+  top: 12em;
 }
 
 h2 {
@@ -42,6 +43,13 @@ h2 {
   margin: 1em;
   padding: .5em 1em .5em;
   width: 100%;
+}
+
+h3 {
+  background-color: lightgrey;
+  border-radius: 7px;
+  margin: 1em .5em;
+  padding: .5em;
 }
 
 p {
