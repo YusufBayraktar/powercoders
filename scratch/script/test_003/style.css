@@ -1,17 +1,34 @@
+div.lightgrey {
+    background-color: lightgrey;
+    text-align: center;
+    color: violet;
+    height: 720px;
+}
+
+div.violet {
+    background-color: violet;
+    text-align: center;
+    color: lightgrey;
+    height: 720px
+}
+
+h1 {
+    cursor: default;
+}
+
+
+
 span.show {
-  display: inline-block;
-  width: 1em;
+    display: block;
 }
 
 span.hide {
-  display: none;
+    display: none;
 }
 
-ul.show {
-  
-  display: block;
+.show {
+    display: block;
 }
-
-ul.hide {
-  display: none;
+.hide {
+    display: none;
 }

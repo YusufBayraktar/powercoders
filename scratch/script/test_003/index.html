@@ -1,26 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
-    <title>O</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="script.js">
+    </script>
+    <title>onClick</title>
   </head>
   <body>
-    <div>
-      <h1>
-        <span id="hide-icon" class="show" onclick="hide(event, 'hide');">0
-        </span>
-        <span id="show-icon" class="hide" onclick="show(event, 'show');">Q
-        </span>
-      </h1>
+  <div id="body" class="lightgrey">
+    <h1>
+      <span id="w" class="show" onclick="hide(event);">W</span>
+      <span id="e" class="hide" onclick="show(event);">M</span>
+    </h1>
 
-        <ul id="info">
-          <li>the</li>
-          <li>night</li>
-          <li>comes</li>
-          <li>early</li>
-        </ul>
-      </div>
+    <div id="piece" class="show">piece
+    </div>
+
+    <div id="light" class="hide">light
+    </div>
+  </div>
+
   </body>
+
 </html>
