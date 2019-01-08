@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', function(event){
     let deleteButton = document.createElement('button');
     deleteButton.textContent = 'delete';
 
+    deleteButton.addEventListener('click', function(){
+      listItem.remove();
+    });
+
     listItem.appendChild(listText);
     listItem.appendChild(deleteButton);
     document.querySelector('ul').appendChild(listItem);
