@@ -1,17 +1,16 @@
 document.addEventListener('DOMContentLoaded', function (event) {
+  let inputBox = document.getElementById('item');
   document.querySelector('button').addEventListener('click', function (event) {
-    let inputBox = document.getElementById('item');
     document.querySelector('ul').appendChild(createNewListItem(inputBox.value));
   });
 
   document.querySelector('input').addEventListener('keyup', function (event) {
     if (event.key === 'Enter') {
-      let inputBox = document.getElementById('item');
       document.querySelector('ul').appendChild(createNewListItem(inputBox.value));
     }
   });
 });
-
+// inputBoxValue
 function createNewListItem(itemName) {
   let listItem = document.createElement('li');
   let listText = document.createElement('span');
