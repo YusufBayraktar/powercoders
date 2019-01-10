@@ -2,12 +2,15 @@ document.addEventListener('DOMContentLoaded', function (event) {
   let inputBox = document.getElementById('item');
   document.querySelector('button').addEventListener('click', function (event) {
     document.querySelector('ul').appendChild(createNewListItem(inputBox.value));
+    inputBox.value = "";
   });
 
   document.querySelector('input').addEventListener('keyup', function (event) {
     if (event.key === 'Enter') {
       document.querySelector('ul').appendChild(createNewListItem(inputBox.value));
+      inputBox.value = "";
     }
+
   });
 });
 // inputBoxValue
