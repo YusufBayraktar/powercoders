@@ -1,18 +1,28 @@
-document.addEventListener('DOMContentLoaded', function(event){
-  document.querySelector('button').addEventListener('click', function(event){
-    let el = document.getElementById('item');
-    let listItem = document.createElement('li');
-    let listText = document.createElement('span');
-    listText.textContent = el.value;
-    let deleteButton = document.createElement('button');
-    deleteButton.textContent = 'delete';
-    deleteButton.addEventListener('click', function(){
-      listItem.remove();
-    });
+document.addEventListener('DOMContentLoaded', function (event) {
+  document.querySelector('button').addEventListener('click', function (event) {
+    let inputBox = document.getElementById('item');
+    document.querySelector('ul').appendChild(createNewListItem(inputBox.value));
+  });
 
-    listItem.appendChild(listText);
-    listItem.appendChild(deleteButton);
-    document.querySelector('ul').appendChild(listItem);
-    return listItem;
+  document.querySelector('input').addEventListener('keyup', function (event) {
+    if (event.key === 'Enter') {
+      let inputBox = document.getElementById('item');
+      document.querySelector('ul').appendChild(createNewListItem(inputBox.value));
+    }
   });
 });
+
+function createNewListItem(itemName) {
+  let listItem = document.createElement('li');
+  let listText = document.createElement('span');
+  listText.textContent = itemName;
+  let deleteButton = document.createElement('button');
+  deleteButton.textContent = 'delete';
+  deleteButton.addEventListener('click', function (event) {
+    listItem.remove();
+  });
+
+  listItem.appendChild(listText);
+  listItem.appendChild(deleteButton);
+  return listItem;
+}
