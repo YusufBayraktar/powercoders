@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', function (event) {
   let inputBox = document.getElementById('item');
+  inputBox.focus();
   document.querySelector('button').addEventListener('click', function (event) {
     document.querySelector('ul').appendChild(createNewListItem(inputBox.value));
     inputBox.value = "";
+    inputBox.focus();
   });
 
   document.querySelector('input').addEventListener('keyup', function (event) {
@@ -10,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
       document.querySelector('ul').appendChild(createNewListItem(inputBox.value));
       inputBox.value = "";
     }
+  inputBox.focus();
 
   });
 });
