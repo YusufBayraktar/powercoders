@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
   inputBox.focus();
 
   document.querySelector('button').addEventListener('click', function (event) {
-    if (inputBox.value !== '') {
+    if (inputBox.value.trim() !== '') {
       shoppingList.appendChild(createNewListItem(inputBox.value));
     }
     inputBox.value = "";
@@ -12,12 +12,11 @@ document.addEventListener('DOMContentLoaded', function (event) {
   });
 
   inputBox.addEventListener('keyup', function (event) {
-    if (event.key === 'Enter') {
-      if (inputBox.value !== '') {
+    if (inputBox.value.trim() !== '') {
+      if (event.key === 'Enter') {
         shoppingList.appendChild(createNewListItem(inputBox.value));
+        inputBox.value = "";
       }
-      inputBox.value = "";
-    
     }
     inputBox.focus();
   });
