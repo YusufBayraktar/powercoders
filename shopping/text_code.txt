@@ -1,0 +1,83 @@
+line 1:
+	adds an event listener that says run script after DOM content loaded, and starts a function..
+line 2:
+	declares a constant, inpuBox that is assinged to id 'item'
+line 3:
+	declares a constant, shoppingList that is assigned to unordered list, and is selected by query selector
+line 4:
+	declares a constant, button that is assigned to button, and is selected by query selector
+line 5:
+	gives focus to inputBox, that results after DOM content is loaded input 
+line 7:
+	adds an event listener to the constant button on click and relates the event with a function..
+line 8:
+	declares a constant named trimmedVlaue, and by calling trim() method clears left/right hand sides whitespaces of the value of inpuBox variable
+line 9:
+	'if statement' that controls if there is not any value inside of the inputBox. and the whitespaces left/right hand sides 
+	of the value will be cleared with the method trim().
+line 10:
+	button varible's able/disable option is set to false which means disabled
+line 11:
+	shoppingList -which is on line 3 declared- variable gets the trimmed value of inputBox variable by the function createNewListItem - that will defined betwwen line 38 and 51
+line 12:
+	value of inputBox variable is equal to an empty string
+line 13:
+	closing curly braket of if statement
+line 14:
+	inputBox variable gets focus by the method trim()
+line 15:
+	starts an 'if statement' with the condition if the trimmed value of inptuBox variable is equal to empty string
+line 16:
+	button varible's able/disable option is set to true which means abled$
+line 17:
+	closing curly bracket of if statement
+line 18:
+	closing curly bracket of if statement and closing bracket of event listener
+line 20:
+	adds an event listener to the constant button on keyup and relates the event with a function..
+line 21:
+	declares a constant, trimmedValue that is assinged to trimmed value of inputBox variable
+line 22:
+	'if statement' if trimmedValue cconstant is not equal to empty string
+line 23:
+	button variable's disabled option is set to false, means the button is able
+line 24:
+	'if statement' controls if enter key is actived. activated is true.
+line 25:
+	trimmedValue is appended to shoppingList with createNewListItem function
+line 26:
+	value of inputBox constant is changed to empty string
+line 27:
+	button varible's able/disable option is set to true which means disabled
+line 28:
+	closing bracket of if statement
+line 29:
+	else
+line 30:
+	button varible's able/disable option is set to true which means disabled
+line 34:
+	brings the imlec to inputBox by the focus method
+line 38:
+	starts a function named createNewListItem with the parameter of itemName
+line 39:
+	declares a constant named listItem that creates a list item in the html document, but not attached to any element
+line 40:
+	declares a constant named listText that creates a span in the html document, but not attached to any element
+line 41:
+	creates a text content property / text node and relates it to listItem constant than assigns the parameter itemName
+line 42:
+	declares a constant named deleteButton and creates a button element inside html document, button is not yet attached to any other element
+line 43:
+	adds a text node with textContent property to deleteButton constant reads 'delete'
+line 44:
+	adds an event -click-  listener method to constant deleteButton and starts a function
+line 45:
+	 callss remove method by listItem constant.
+line 46:
+	closing brackets of funtion and eventlistener
+line 48:
+	listText constant is attached to listItem constant in DOM tree as a appending-child
+line 49:
+	deleteButton constant is attached to listItem constant in DOM tree as a appending-child
+line 50:
+	return method sends the created element in to its place in DOM tree when the function createNewListItem is called in script and gets its value -itemName-
