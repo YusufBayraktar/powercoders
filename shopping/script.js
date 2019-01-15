@@ -3,35 +3,41 @@ document.addEventListener('DOMContentLoaded', function (event) {
   const shoppingList = document.querySelector('ul');
   const button = document.querySelector('button');
   inputBox.focus();
+  button.disabled = true;
 
   button.addEventListener('click', function (event) {
-    if (inputBox.value.trim() !== '') {
-      button.disabled = false;
-      shoppingList.appendChild(createNewListItem(inputBox.value.trim()));
-      inputBox.value = '';
-    }
+    const trimmedValue = inputBox.value.trim();
+    button.disabled = trimmedValue === '';
+    shoppingList.appendChild(createNewListItem(trimmedValue));
+    inputBox.value = '';
+    button.disabled = true;
     inputBox.focus();
-    if (inputBox.value.trim() === '') {
-        button.disabled = true;
-    }
   });
 
   inputBox.addEventListener('keyup', function (event) {
-    if (inputBox.value.trim() !== '') {
-      button.disabled = false;
-      if (event.key === 'Enter') {
-        shoppingList.appendChild(createNewListItem(inputBox.value.trim()));
-        inputBox.value = '';
-      }
+    const trimmedValue = inputBox.value.trim();
+    button.disabled = trimmedValue === '';
+    if (trimmedValue === '') {
+      return;
     }
-    if (inputBox.value.trim() === '') {
-        button.disabled = true;
+    if (event.key !== 'Enter') {
+      return;
     }
+    shoppingList.appendChild(createNewListItem(trimmedValue));
+    inputBox.value = '';
+    button.disabled = true;
+    inputBox.focus();
   });
-  inputBox.focus();
-
 });
-// inputBoxValue
+
+/**
+ * Creates and returns an 'li' element for inclusion in the shopping list.
+ *
+ * should be a blank line between paragraphs
+ *
+ * @param {string} itemName Name of the item to add to the listText
+ * @returns {HTMLElement} li element
+ */
 function createNewListItem(itemName) {
   const listItem = document.createElement('li');
   const listText = document.createElement('span');
