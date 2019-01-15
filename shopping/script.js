@@ -46,6 +46,7 @@ function createNewListItem(itemName) {
   deleteButton.className = "fas fa-trash";
   deleteButton.addEventListener('click', function (event) {
     listItem.remove();
+    document.querySelector('input').focus();
   });
 
   listItem.appendChild(listText);
