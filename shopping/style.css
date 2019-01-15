@@ -26,3 +26,7 @@ input {
 .fas {
   color: purple;
 }
+
+ul li .fas {
+  margin: .3em;
+}
