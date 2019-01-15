@@ -43,7 +43,7 @@ function createNewListItem(itemName) {
   const listText = document.createElement('span');
   listText.textContent = itemName;
   const deleteButton = document.createElement('button');
-  deleteButton.textContent = 'delete';
+  deleteButton.className = "fas fa-trash";
   deleteButton.addEventListener('click', function (event) {
     listItem.remove();
   });
