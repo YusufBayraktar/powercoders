@@ -1,3 +1,27 @@
+/**
+ * Creates and returns an 'li' element for inclusion in the shopping list.
+ *
+ * should be a blank line between paragraphs
+ *
+ * @param {string} itemName Name of the item to add to the listText
+ * @returns {HTMLElement} li element
+ */
+function createNewListItem(itemName) {
+  const listItem = document.createElement('li');
+  const listText = document.createElement('span');
+  listText.textContent = itemName;
+  const deleteButton = document.createElement('button');
+  deleteButton.className = "fas fa-trash";
+  deleteButton.addEventListener('click', function (event) {
+    listItem.remove();
+    document.querySelector('input').focus();
+  });
+
+  listItem.appendChild(listText);
+  listItem.appendChild(deleteButton);
+  return listItem;
+}
+
 document.addEventListener('DOMContentLoaded', function (event) {
   const inputBox = document.getElementById('item');
   const shoppingList = document.querySelector('ul');
@@ -28,28 +52,11 @@ document.addEventListener('DOMContentLoaded', function (event) {
     button.disabled = true;
     inputBox.focus();
   });
-});
 
-/**
- * Creates and returns an 'li' element for inclusion in the shopping list.
- *
- * should be a blank line between paragraphs
- *
- * @param {string} itemName Name of the item to add to the listText
- * @returns {HTMLElement} li element
- */
-function createNewListItem(itemName) {
-  const listItem = document.createElement('li');
-  const listText = document.createElement('span');
-  listText.textContent = itemName;
-  const deleteButton = document.createElement('button');
-  deleteButton.className = "fas fa-trash";
-  deleteButton.addEventListener('click', function (event) {
-    listItem.remove();
-    document.querySelector('input').focus();
+  const delAll = document.getElementById('del');
+  delAll.addEventListener('click', function(event) {
+    const lists = document.querySelectorAll('li');
+    for (i = 0; i < lists.length; i++)
+          lists[i].remove();
   });
-
-  listItem.appendChild(listText);
-  listItem.appendChild(deleteButton);
-  return listItem;
-}
+});

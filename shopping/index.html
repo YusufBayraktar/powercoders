@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="medium.css" media="screen and (min-width: 840px)">
+    <link rel="stylesheet" href="medium.css" media="screen and (min-width: 9600px)">
     <link rel="stylesheet" href="large.css" media="screen and (min-width: 1200px)">
     <link rel="stylesheet" href="xlarge.css" media="screen and (min-width: 1600px)">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
@@ -20,9 +20,10 @@
       <label for= "item">type an item &rarr;</label>
       <input type= "text" id="item" placeholder="here to add your list">
       <button class="fas fa-shopping-cart"></button>
+      <span id="warning" class="hidden">non-valid entry</span>
     </div>
     <ul>
     </ul>
-
+    <button id="del" class="fas fa-trash">all</button>
   </body>
 </html>
