@@ -3,17 +3,16 @@
  *
  * should be a blank line between paragraphs
  *
- * @param {string} itemName Name of the item to add to the listText
- * @param {string} quantity quantity of the added item
+ * @param {string} {{name: string, quantity: stirng}} item Item to append to the list
  * @returns {HTMLElement} li element
  */
-function createNewListItem(itemName, quantity) {
+function createNewListItem(item) {
   const listItem = document.createElement('li');
   const listText = document.createElement('span');
   const quantityOfProduct = document.createElement('span');
-  listText.textContent = itemName;
+  listText.textContent = item.name;
   space = document.createTextNode(' ');
-  quantityOfProduct.textContent = quantity;
+  quantityOfProduct.textContent = item.quantity;
   const deleteButton = document.createElement('button');
   deleteButton.className = "fas fa-trash";
   deleteButton.addEventListener('click', function (event) {
@@ -39,7 +38,11 @@ document.addEventListener('DOMContentLoaded', function (event) {
   button.addEventListener('click', function (event) {
     const trimmedValue = inputBox.value.trim();
     button.disabled = trimmedValue === '';
-    shoppingList.appendChild(createNewListItem(trimmedValue, inputBoxQuantity.value.trim()));
+    const item = {
+        name: inputBox.value.trim(),
+        quantity: document.getElementById('theQuantity').value
+      };
+    shoppingList.appendChild(createNewListItem(item));
     inputBox.value = '';
     inputBoxQuantity.value = '';
     button.disabled = true;
@@ -56,19 +59,17 @@ document.addEventListener('DOMContentLoaded', function (event) {
    if (event.key !== 'Enter') {
       return;
     }
-    shoppingList.appendChild(createNewListItem(trimmedValue, inputBoxQuantity.value.trim()));
+
+    const item = {
+        name: inputBox.value.trim(),
+        quantity: document.getElementById('theQuantity').value
+      };
+    shoppingList.appendChild(createNewListItem(item));
     inputBox.value = '';
     inputBoxQuantity.value = '';
     button.disabled = true;
     inputBox.focus();
-    
-   if (inputBoxQuantity.value.trim() !== '') {
-     shoppingList.appendChild(createNewListItem(trimmedValue, inputBoxQuantity.value.trim()));
-     inputBox.value = '';
-     inputBoxQuantity.value = '';
-     button.disabled = true;
-     inputBox.focus();  
-    }
+
   });
 
   const delAll = document.getElementById('del');
