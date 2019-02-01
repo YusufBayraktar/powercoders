@@ -3,7 +3,8 @@
  *
  * should be a blank line between paragraphs
  *
- * @param : {ShoppingListItem} item Item to append to the list
+ * Create and returns an 'li' element for inclusion in the shopping list
+ *
  * @returns {HTMLElement} li element
  *
  * Expressions of an item
@@ -17,13 +18,13 @@
      this.quantity = quantity;
  }
 
-function createNewListItem(item) {
+ShoppingListItem.prototype.toListItem = function () {
   const listItem = document.createElement('li');
   const listText = document.createElement('span');
   const quantityOfProduct = document.createElement('span');
-  listText.textContent = item.name;
+  listText.textContent = this.name;
   space = document.createTextNode(' ');
-  quantityOfProduct.textContent = item.quantity;
+  quantityOfProduct.textContent = this.quantity;
   const deleteButton = document.createElement('button');
   deleteButton.className = "fas fa-trash";
   deleteButton.addEventListener('click', function (event) {
@@ -49,9 +50,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
   button.addEventListener('click', function (event) {
     const trimmedValue = inputBox.value.trim();
     button.disabled = trimmedValue === '';
-    const item = new ShoppingListItem(inputBox.value.trim(),
-        document.getElementById('theQuantity').value);
-    shoppingList.appendChild(createNewListItem(item));
+    const item = new ShoppingListItem(trimmedValue,
+        inputBoxQuantity.value);
+    shoppingList.appendChild(item.toListItem());
     inputBox.value = '';
     inputBoxQuantity.value = '';
     button.disabled = true;
@@ -69,14 +70,13 @@ document.addEventListener('DOMContentLoaded', function (event) {
       return;
     }
 
-    const item = new ShoppingListItem(inputBox.value.trim(),
-        document.getElementById('theQuantity').value);
-    shoppingList.appendChild(createNewListItem(item));
+    const item = new ShoppingListItem(trimmedValue,
+        inputBoxQuantity.value);
+    shoppingList.appendChild(item.toListItem());
     inputBox.value = '';
     inputBoxQuantity.value = '';
     button.disabled = true;
     inputBox.focus();
-
   });
 
   const delAll = document.getElementById('del');
