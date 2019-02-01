@@ -3,9 +3,20 @@
  *
  * should be a blank line between paragraphs
  *
- * @param {string} {{name: string, quantity: stirng}} item Item to append to the list
+ * @param : {ShoppingListItem} item Item to append to the list
  * @returns {HTMLElement} li element
+ *
+ * Expressions of an item
+ *
+ * @param name {string} Name of the item
+ * @param quantity {string} Quantity of the item
+ * @constructor
  */
+ function ShoppingListItem(name, quantity) {
+     this.name = name;
+     this.quantity = quantity;
+ }
+
 function createNewListItem(item) {
   const listItem = document.createElement('li');
   const listText = document.createElement('span');
@@ -38,10 +49,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
   button.addEventListener('click', function (event) {
     const trimmedValue = inputBox.value.trim();
     button.disabled = trimmedValue === '';
-    const item = {
-        name: inputBox.value.trim(),
-        quantity: document.getElementById('theQuantity').value
-      };
+    const item = new ShoppingListItem(inputBox.value.trim(),
+        document.getElementById('theQuantity').value);
     shoppingList.appendChild(createNewListItem(item));
     inputBox.value = '';
     inputBoxQuantity.value = '';
@@ -60,10 +69,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
       return;
     }
 
-    const item = {
-        name: inputBox.value.trim(),
-        quantity: document.getElementById('theQuantity').value
-      };
+    const item = new ShoppingListItem(inputBox.value.trim(),
+        document.getElementById('theQuantity').value);
     shoppingList.appendChild(createNewListItem(item));
     inputBox.value = '';
     inputBoxQuantity.value = '';
