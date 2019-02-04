@@ -1,0 +1,40 @@
+body {
+  background-color: lightgrey;
+}
+
+h1 {
+  color: lightgrey;
+  text-shadow: 1px 2px 2px purple;
+  margin-left: 7.4em;
+}
+
+div {
+  margin-left: 2em;
+}
+
+ul li {
+  margin: 2.3em;
+}
+
+button {
+  position: absolute;
+  left: 56em;
+  margin: 1em;
+}
+
+label{
+  color: purple;
+}
+
+input {
+  width: 18em;
+  margin: 1em;
+}
+
+.fas {
+  color: purple;
+}
+
+ul li .fas {
+  margin: .3em;
+}
