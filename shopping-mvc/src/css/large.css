@@ -1,0 +1,17 @@
+h1 {
+  margin-left: 14em;
+  transition: 1s;
+}
+
+button {
+  position: absolute;
+  left: 48em;
+  margin: 1em;
+  transition: 1s;
+}
+
+input {
+  width: 34em;
+  margin: 1em;
+  transition: 1s;
+}
