@@ -27,6 +27,11 @@ class Model {
     this.view_.update();
   }
 
+  delete(i) {
+    this.items_.splice(i, 1);
+    this.view_.update();
+  }
+
   get items() {
     return this.items_.slice();
   }

@@ -16,8 +16,9 @@ class ShoppingListItem {
   }
 
   /**
+  * Creates and returns an 'li' element for inclusion in the shopping list.
   *
-  *
+  * @returns {!HTMLElement} li element
   */
   toListItem() {
     const listItem = document.createElement('li');
@@ -26,13 +27,8 @@ class ShoppingListItem {
     listText.textContent = this.name;
     //space = document.createTextNode(' ');
     quantityOfProduct.textContent = this.quantity;
-    const deleteButton = document.createElement('button');
+    const deleteButton = document.createElement('button'); //is not deleted yet because of font styling method
     deleteButton.className = "fas fa-trash";
-    deleteButton.addEventListener('click', function (event) {
-      listItem.remove();
-      document.querySelector('input').focus();
-    });
-
     listItem.appendChild(quantityOfProduct);
     //listItem.appendChild(space);
     listItem.appendChild(listText);

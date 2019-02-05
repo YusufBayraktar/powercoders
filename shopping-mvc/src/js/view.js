@@ -24,6 +24,7 @@ class View {
 		this.addItemButton_ = document.getElementById('add');
 
 		this.addItemButton_.addEventListener('click', () => this.addItem());
+
 	}
 
 	addItem() {
@@ -42,6 +43,10 @@ class View {
 		for(let i=0 ; i < this.model_.items.length; i++) {
 			const item = this.model_.items[i];
 			const listItem = item.toListItem();
+
+			const deleteButton = listItem.querySelector('button');
+			deleteButton.addEventListener('click', () => this.controller_.deleteItem(i));
+
 			this.shoppingList_.appendChild(listItem);
 		}
 		this.inputBox_.value = '';
