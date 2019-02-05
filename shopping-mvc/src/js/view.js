@@ -5,8 +5,6 @@ class View {
 	* @param controller {!Controller} App controller
 	*/
 	constructor(model, controller) {
-		console.log('view is ready');
-
 		/** @private {!Model} App data model */
 		this.model_ = model;
 

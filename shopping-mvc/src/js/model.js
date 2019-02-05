@@ -6,7 +6,6 @@
 class Model {
   /** @param controller */
 	constructor(controller) {
-		console.log('model initialised!');
 		/** @private {!ShoppingListItem[]} Items in the list */
 		this.items_ = [];
 
