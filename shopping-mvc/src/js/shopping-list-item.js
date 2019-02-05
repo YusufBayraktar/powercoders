@@ -14,6 +14,7 @@ class ShoppingListItem {
     this.name = name;
     this.quantity = quantity;
   }
+
   /**
   *
   *
