@@ -25,12 +25,10 @@ class ShoppingListItem {
     const listText = document.createElement('span');
     const quantityOfProduct = document.createElement('span');
     listText.textContent = this.name;
-    //space = document.createTextNode(' ');
     quantityOfProduct.textContent = this.quantity;
-    const deleteButton = document.createElement('button'); //is not deleted yet because of font styling method
+    const deleteButton = document.createElement('button');
     deleteButton.className = "fas fa-trash";
     listItem.appendChild(quantityOfProduct);
-    //listItem.appendChild(space);
     listItem.appendChild(listText);
     listItem.appendChild(deleteButton);
     return listItem;

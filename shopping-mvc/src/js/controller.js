@@ -4,7 +4,7 @@
 class Controller {
 	constructor() {
 		/** @private {!Model} Application model */	// "!" exclamation mark means this value cannot be null
-		this.model_ = new Model(this); // here "_" underscore means this is a private object domot change it!
+		this.model_ = new Model(this); // here "_" underscore means this is a private object donot change it!
 	}
 
 /**
@@ -27,5 +27,13 @@ class Controller {
 
 	 deleteItem(i) {
 		 this.model_.delete(i);
+	 }
+
+	 /**
+	 * Clear the shoppping list
+	 */
+
+	 delAll() {
+		 this.model_.del();
 	 }
 }
