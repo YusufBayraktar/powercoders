@@ -9,8 +9,8 @@
  *
  * Expressions of an item
  *
- * @param name {string} Name of the item
- * @param quantity {string} Quantity of the item
+ * @param {name {string}, quantity {string}} item
+ * 
  * @constructor
  */
  function ShoppingListItem(name, quantity) {
