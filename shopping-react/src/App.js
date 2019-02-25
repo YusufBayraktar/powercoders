@@ -5,12 +5,14 @@ import ClearList from './ClearList';
 import ShoppingList from './ShoppingList';
 
 class App extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
       items: ['fn', 'ln', 'int'],
     };
   }
+  
   render() {
     return (
       <div>
