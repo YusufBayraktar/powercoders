@@ -17,7 +17,7 @@ class App extends Component {
   onAddItem (name, quantity) {
     let item = name;
     if (quantity !== '') {
-      item = item + `(${quantity})`;
+      item = item + ` (${quantity})`;
     }
     //this.setState({items: [...this.state.items, item]});
     this.setState((prevState) => ({items: prevState.items.concat(item)}));
