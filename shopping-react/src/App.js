@@ -11,12 +11,22 @@ class App extends Component {
     this.state = {
       items: ['fn', 'ln', 'int'],
     };
+    this.onAddItem = this.onAddItem.bind(this);
   }
-  
+
+  onAddItem (name, quantity) {
+    let item = name;
+    if (quantity !== '') {
+      item = item + `(${quantity})`;
+    }
+    //this.setState({items: [...this.state.items, item]});
+    this.setState((prevState) => ({items: prevState.items.concat(item)}));
+  }
+
   render() {
     return (
       <div>
-        <ItemInput/>
+        <ItemInput onAddItem={this.onAddItem}/>
         <ClearList/>
         <ShoppingList items={this.state.items}/>
       </div>
