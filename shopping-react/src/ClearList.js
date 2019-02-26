@@ -2,7 +2,9 @@ import React, {Component} from 'react';
 
 class ClearList extends Component {
   render () {
-    return '';
+    return (
+      <button onClick={this.props.onClearList}>deleteAll</button>
+    )
   }
 }
 
