@@ -9,7 +9,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      items: ['fn', 'ln', 'int'],
+      items: [],
     };
     this.onAddItem = this.onAddItem.bind(this);
   }
