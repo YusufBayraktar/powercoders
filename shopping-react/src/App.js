@@ -13,6 +13,7 @@ class App extends Component {
     };
     this.onAddItem = this.onAddItem.bind(this);
     this.onClearList = this.onClearList.bind(this);
+    this.onClearItem = this.onClearItem.bind(this);
   }
 
   onAddItem (name, quantity) {
@@ -28,23 +29,21 @@ class App extends Component {
     this.setState({items: []});
   }
 
+  onClearItem (index) {
+    this.setState((prevState) => {
+      prevState.items.splice(index, 1);
+      return {items: prevState.items};
+    });
+  }
+
   render() {
     return (
       <div>
         <ItemInput onAddItem={this.onAddItem}/>
         <ClearList onClearList={this.onClearList}/>
-        <ShoppingList items={this.state.items}/>
+        <ShoppingList items={this.state.items}
+                      onClearItem={this.onClearItem}/>
       </div>
-
-      //<div className="App">
-        //<div className="App-header">
-          //<img src={logo} className="App-logo" alt="logo" />
-          //<h2>Welcome to React</h2>
-        //</div>
-        //<p className="App-intro">
-          //To get started, edit <code>src/App.js</code> and save to reload.
-        //</p>
-      //</div>
     );
   }
 }
